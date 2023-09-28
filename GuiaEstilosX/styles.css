@@ -1,4 +1,9 @@
 
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
 
 .container {
     height: 100vh; /*vertical */
@@ -41,6 +46,16 @@
     margin: 5px;
     padding-left: 5px;
 
+    border-radius: 6px;
+
     background-color: chartreuse;
 }
+
+.zonaNavegacion div:hover {
+
+    background-color: rgb(81, 160, 2);
+
+}
+
+
 
