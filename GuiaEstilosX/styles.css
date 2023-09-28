@@ -26,3 +26,11 @@
     background-color: brown;
 }
 
+.zonaNavegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: blue;
+}
+
