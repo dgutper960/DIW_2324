@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="gridContainer">
+      <div id="zonaLogo">
+        <a id="logo" href="#">
+          <img src="images/cabeza-vr.svg" alt="logo" />
+        </a>
+      </div>
+
+      <div id="zonaTitulo">
+        <h1>UBRIWEB</h1>
+      </div>
+
+      <div id="zonaNavegacion">
+        <div>
+          <p>Inicio</p>
+        </div>
+        <div>
+          <p>Servicios</p>
+        </div>
+        <div>
+          <p>Contacto</p>
+        </div>
+      </div>
+
+      <div id="zonaContenido" class="zonaContenidoContacto">
+        <h2>Formulario de contacto</h2>
+        <div class="divFormulario">
+          <form action="">
+            <div class="inputDiv">
+              <label for="fNombre">Nombre</label><br />
+              <input type="text" id="fNombre" placeholder="Nombre" />
+            </div>
+            <div class="inputDiv">
+              <label for="fApellidos">Apellidos</label><br />
+              <input type="text" id="fApellidos" placeholder="Apellidos" />
+            </div>
+            <div class="inputDiv">
+              <label for="fEmail">Email</label><br />
+              <input type="text" id="fEmail" placeholder="correo@dominio.com" />
+            </div>
+            <div class="inputTextArea">
+              <label for="fMotivo">Motivo contacto</label><br />
+              <textarea
+                id="fMotivo"
+                placeholder="Escriba el motivo de su contacto"
+              ></textarea>
+            </div>
+            <div class="inputBotones">
+              <button type="submit">Enviar</button>
+              <button type="reset">Borrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

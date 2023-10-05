@@ -78,6 +78,7 @@ a {
   grid-template-columns: repeat(12, 1fr);
   height: 100%;
   grid-gap: 10px;
+  margin-top: 10px;
 }
 
 .zonaContenido {
@@ -132,5 +133,11 @@ a {
 
   .zonaContenido {
     grid-column: 1 / 13;
+  }
+}
+
+@media all and (min-width: 968px) and (max-width: 1100px) {
+  .zonaContenido {
+    grid-column: 2 / 12;
   }
 }
