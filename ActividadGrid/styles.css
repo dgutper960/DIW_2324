@@ -15,13 +15,16 @@ body {
 }
 
 .gridContainer {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 20% 50px auto;
 
-  gap: 5px
+  gap: 5px;
+
+  margin-bottom: 30px;
 }
 
 #zonaLogo {
@@ -34,7 +37,7 @@ body {
 }
 
 #zonaLogo img {
-  max-height: 150px;
+  max-height: 200px;
   height: 100px;
 }
 
@@ -194,7 +197,6 @@ body {
   height: 40px;
 
   outline: none;
-  border: 1px solid green;
   border-radius: 5px;
 
   font-size: 1.1em;
@@ -203,15 +205,16 @@ body {
 }
 
 .inputBotones button:nth-child(1) {
-  border: 1px solid green;
+  border: 2px solid green;
 }
 
 .inputBotones button:nth-child(2) {
-  border: 1px solid orangered;
+  border: 2px solid orangered;
 }
 
 .inputBotones button:hover {
   font-size: 1em;
-
+  cursor: pointer;
   transform: scale(1.1);
 }
+
