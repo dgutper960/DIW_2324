@@ -5,19 +5,28 @@ Para cambiar el color del fondo:
 - https://code.visualstudio.com/api/references/theme-color
 
 "workbench.colorCustomizations": {
-  
     "activityBar.background": "#000000",
     "activityBar.border": "#49314d",
     "activityBar.activeBackground": "#49314d",
     "sideBar.border": "#49314d",
     "editorGroupHeader.tabsBackground": "#000000",
+    // Color de los números de la izquierda. El número de línea
+    "editorLineNumber.foreground": "#f1a4ff",
+    // Color de los números de la izquierda. El número de la línea activa
+    "editorLineNumber.activeForeground": "#ff0000",
     "editorGroupHeader.border": "#49314d",
     "tab.activeBackground": "#49314d",
     "tab.inactiveBackground": "#000000",
     "panel.background": "#000000",
     "editor.background": "#000000",
-    "terminal.foreground": "#ffffff",
-    "terminal.background": "#000000"
+
+    // Colores de la terminal
+    // Color de la letra de la terminal
+    "terminal.foreground": "#e0ffde",
+    // Color del fondo de la terminal
+    "terminal.background": "#000000",
+    // Color del cursor de la terminal
+    "terminalCursor.foreground": "#ff0000"
   },
 
 
