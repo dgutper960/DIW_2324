@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Open+Sans:wght@800&family=Roboto&family=Roboto+Slab:wght@300&display=swap");
+
+/* Estilos adicionales para el contenido de tu página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: black;
+  /* Otros estilos de tu elección para el contenido de tu página */
+}
+
+p {
+  font-family: "Croissant One", "Roboto Slab", serif;
+}
+
+*,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", "Roboto", sans-serif;
+}
+
+/***************************************************************/
+/*Zona header, la hago de altura 10vh (10% del viewport height)*/
+/***************************************************************/
+.header {
+  height: 15vh;
+  width: 100%;
+  background-color: rgba(223, 223, 223, 0.432);
+
+  position: fixed;
+  /*
+  position fixed para que se quede siempre en el mismo sitio, es decir, para conseguir un efecto sticky.
+  He probado con "position: sticky", pero eso cambiaba el posicionamiento del resto de elementos, más o menos de igual manera que el 
+  el relative vs el absolute
+  */
+}
+
+/*****************/
+/*ZONA DEL TITULO*/
+/*****************/
+.header__titulo {
+  /*Le doy un tamaño al div que contendrá el título*/
+  height: 100%;
+  width: auto;
+  position: absolute;
+
+  /*Esto centra el divCaja en el nav. Dicho con otras palabras, centra la caja */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /*Esto centra el contenido dentro del divCaja. Dicho con otras palabras, centra el contenido de la caja*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  /*Le doy algunos retoques estéticos de cara al hover*/
+  border-radius: 10px;
+
+  transition: 0.2s ease-in;
+}
+
+.header__titulo:hover {
+  filter: blur(1px);
+  cursor: pointer;
+}
+
+.titulo__span {
+  transition: 0.2s ease-in;
+}
+
+.header__titulo:hover .titulo__span {
+  color: red;
+}
+
+/***************************/
+/*ZONA DEL MENU HAMBURGUESA*/
+/***************************/
+.header__menu {
+  height: 100%;
+  width: 100px;
+  position: absolute;
+
+  left: auto;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  transition: 0.2s ease-out;
+}
+
+.header__menu:hover {
+  gap: 2px;
+  cursor: pointer;
+}
+
+.menu__span {
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgb(24, 24, 24);
+}
+
+.menu__span:nth-child(2) {
+  margin-left: 4px;
+  width: 20px;
+}
+
+.header__menu:hover .menu__span:nth-child(2) {
+  background-color: rgb(252, 71, 71);
+}
+
+/******************/
+/*MENU DESPLEGABLE*/
+/******************/
+.navItems {
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+
+  background-color: rgba(187, 187, 187, 0.477);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  transform: translateX(100%);
+  height: 300px;
+
+  transition: 0.1s ease-in;
+}
+
+.navItems--abrir {
+  transform: translateX(0);
+
+  transition: 0.1s ease-in;
+}
+
+.navItems__span {
+  font-size: 2em;
+  padding-right: 20px;
+}
+
+/********************/
+/*ZONA DEL CONTENIDO*/
+/********************/
+.gridPrincipal {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /*grid-template-rows: 20vh auto;*/ /*En este caso opto por no poner varias filas, sólo pongo un grid para la zona del contenido*/
+}
+
+.gridPrincipal__contenido {
+  grid-column: 1 / 13;
+}
+
+.contenido__img {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.contenido__img--img1 {
+  background-image: url("images/imagen1.jpg");
+}
+.contenido__img--img2 {
+  background-image: url("images/imagen2.jpeg");
+}
+
