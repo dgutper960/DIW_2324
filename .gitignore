@@ -130,5 +130,4 @@ dist
 .pnp.*
 
 # Imagenes y sonidos
-images/
 sounds/
