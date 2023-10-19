@@ -1,0 +1,28 @@
+body {
+    background-color: wheat;
+    margin: 0;
+}
+
+.container {
+
+    width: auto;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.table {
+    width: 500px;
+    height: 500px;
+
+    border: 1px solid black;
+}
+
+
+.row__cell {
+    border: 1px solid black;
+}
+
