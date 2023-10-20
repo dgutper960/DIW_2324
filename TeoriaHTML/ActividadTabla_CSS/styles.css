@@ -1,24 +1,5 @@
-table,
-th,
-td {
-  border-collapse: collapse;
-}
 
-table,
-td {
-  border-bottom: 1px solid gray;
-}
-
-th {
-  border-bottom: 1px solid black;
-  text-align: left;
-}
-
-table {
-  width: 300px;
-  height: 300px;
-}
-
+/*ESTILOS PARA TODO*/
 strong {
   color: orangered;
 }
@@ -26,3 +7,141 @@ strong {
 header {
   color: blue;
 }
+
+.h2--centrado, .p--centrado {
+  text-align: center;
+}
+
+.section--centrado {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*ESTILOS PARA DOCUMENTO 1*/
+/*Metodología BEM Bloque__Elemento--Modificador*/
+.tabla1__tr--underlined {
+  border-bottom: 2px solid black;
+}
+
+.tabla1__th--rightBorder {
+  border-right: 2px solid black;
+}
+
+.tabla1__td--twoBorders {
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.section__tabla1 {
+  width: 300px;
+  height: 300px;
+  border-collapse: collapse;
+}
+
+/*ESTILOS PARA DOCUMENTO 2*/
+.section--consolas {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /*color: azure;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+}
+
+.section__tabla2 {
+  width: auto;
+  border-collapse: collapse;
+}
+
+.thead__filaCabe {
+  background-color: red;
+  height: 50px;
+  border-bottom: 2px solid black;
+}
+.filaCabe__th {
+  width: 80px; 
+  
+}
+.filaCabe__th--slim {
+  width: 30px;
+}
+
+.tbody__filaBody {
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+.tbody__filaBody--acero {
+  background-color: rgb(136, 135, 135);
+}
+
+.tbody__filaBody--volador {
+  background-color: rgb(53, 131, 219);
+}
+
+.tbody__filaBody--agua {
+  background-color: rgb(52, 24, 207);
+}
+
+.tbody__filaBody--hielo {
+  background-color: rgb(87, 222, 240);
+}
+
+.tbody__filaBody--planta {
+  background-color: rgb(40, 119, 4);
+}
+
+.tbody__filaBody--bicho {
+  background-color: rgb(88, 170, 68);
+}
+
+.tbody__filaBody--electrico {
+  background-color: rgb(217, 238, 33);
+}
+
+.tbody__filaBody--normal {
+  background-color: bisque;
+}
+
+.tbody__filaBody--roca {
+  background-color: rgb(211, 139, 52);
+}
+
+.tbody__filaBody--tierra {
+  background-color: rgb(206, 113, 0);
+}
+
+.tbody__filaBody--fuego {
+  background-color: rgb(253, 139, 0);
+}
+
+.tbody__filaBody--lucha {
+  background-color: rgb(252, 81, 39);
+}
+
+.tbody__filaBody--hada {
+  background-color: rgb(255, 187, 221);
+}
+
+.tbody__filaBody--psiquico {
+  background-color: rgb(221, 81, 71);
+}
+
+.tbody__filaBody--veneno {
+  background-color: rgb(245, 124, 219);
+}
+
+.tbody__filaBody--dragon {
+  background-color: rgb(194, 117, 204);
+}
+
+.tbody__filaBody--fantasma {
+  background-color: rgb(110, 45, 136);
+}
+
+.tbody__filaBody--siniestro {
+  background-color: rgb(110, 50, 63);
+}
+
+
+
