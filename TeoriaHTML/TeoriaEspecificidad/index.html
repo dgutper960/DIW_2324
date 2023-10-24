@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especificidad CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__caja1">
+       Titulo
+      </div>
+      <div class="header__caja2">
+        <div class="caja2__div"></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+
+    <main>
+    
+      <div class="cuerpo__divDePrueba">Content1</div>
+      <div class="cuerpo__divDePrueba cuerpo__divDePrueba--red">Content2</div>
+      <div class="cuerpo__divDePrueba cuerpo__divDePrueba--blue">Content3</div>
+    </main>
+
+    <footer>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+        assumenda quis iste, similique illum provident beatae delectus minima
+        sunt, sint excepturi rem non numquam labore. Nulla cumque omnis modi
+        quia?
+      </p>
+    </footer>
+  </body>
+</html>

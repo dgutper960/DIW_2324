@@ -1,0 +1,82 @@
+h1,p,h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+div p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+div>p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+}
+
+.cuerpo__divDePrueba {
+    color: black;
+    background-color: chocolate;
+    margin-left: 10px;
+
+    border: 1px solid black;
+    padding: 10px;
+
+    height: 50px;
+    width: 100px;
+}
+
+.cuerpo__divDePrueba--red {
+    position: relative;
+    background-color: red;
+
+    top: 50px;
+    left: 40px;
+
+}
+.cuerpo__divDePrueba--blue {
+    background-color: blue;
+}
+
+.cuerpo_spanPrueba {
+
+    color: black;
+    background-color: rgb(210, 30, 171);
+    margin-left: 10px;
+
+    border: 1px solid black;
+    padding: 10px;
+
+    height: 100px;
+    width: 100px;
+}
+
+header {
+    height: 200px;
+    width: 100%;
+
+    background-color: whitesmoke;
+}
+
+.header__caja1 {
+    width: 100px;
+    height: 200px;
+
+    position: absolute;
+    left: 30%;
+
+    background-color: blue;
+}
+
+.header__caja2 {
+
+    width: 50px;
+    height: 200px;
+
+    position: absolute;
+    left: auto;
+    right: 0;
+
+    background-color: brown;
+    
+}
+
