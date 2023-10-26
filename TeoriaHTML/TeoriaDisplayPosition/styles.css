@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+}
+
+.body__container {
+    width: 100%; /*Unidad de medida % -> Medida que toma de referencia el padre directo*/
+    height: auto; /*Unidad de medida auto -> Medida que se adapta al contenido*/
+
+    background-color: black;
+}
+
+
+/*EJERCICIO DE SITUAR caja EN MUCHAS POSICIONES DIFERENTES*/
+.container__section {
+    position: relative;
+    height: 33vh; /*Unidad de medida vh -> Medida que toma de referencia el Viewport Height*/
+}
+
+.section__caja {
+    height: 50px;
+    width: 50px;
+
+    max-height: 100%;
+    max-width: 50px;
+
+    background-color: rgb(49, 49, 49);
+}
+
+/*Primera línea*/
+.container__section--aqua {
+    background-color: aqua;
+}
+
+.section__caja--1-0 {
+}
+.section__caja--1-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: brown ;
+}
+.section__caja--1-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: beige;
+}
+
+
+/*Segunda línea*/
+.container__section--brown {
+    background-color: gainsboro;
+}
+
+.section__caja--2-0 {
+    background-color: blue;
+}
+.section__caja--2-1 {
+    background-color: rgb(205, 50, 182) ;
+}
+.section__caja--2-2 {
+    background-color: greenyellow;
+}
+
+/*Tercera línea*/
+.container__section--blueviolet {
+    background-color: blueviolet;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section__caja--3-0 {
+    background-color: red;
+}
+.section__caja--3-1 {
+    background-color: yellow ;
+}
+.section__caja--3-2 {
+    background-color: blue;
+}
+
+/*Cuarta línea*/
+.container__section--green {
+    background-color: green;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__caja--4-0 {
+    background-color: red;
+}
+.section__caja--4-1 {
+    background-color: white ;
+}
+.section__caja--4-2 {
+    background-color: red;
+}
+
+
+/*Quinta línea*/
+.container__section--blue {
+    background-color: blue;
+}
+
+.section__caja--5-0 {
+    background-color: red;
+}
+.section__caja--5-1 {
+    background-color: white ;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+.section__caja--5-2 {
+    background-color: rgb(225, 255, 0);
+}
+
+/*Sexta línea*/
+.container__section--orange {
+    background-color: orange;
+    display: flex;
+}
+
+.section__caja--6-0 {
+    background-color: black;
+}
+.section__caja--6-1 {
+    background-color: white;
+}
+.section__caja--6-2 {
+    background-color: red;
+}
+
+/*Séptima línea*/
+.container__section--red {
+    background-color: red;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.section__caja--7-0 {
+    background-color: green;
+}
+.section__caja--7-1 {
+    background-color: white;
+}
+.section__caja--7-2 {
+    background-color: green;
+}
+
+/*Octava línea*/
+.container__section--black {
+    background-color: black;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.section__caja--8-0 {
+    background-color: green;
+}
+.section__caja--8-1 {
+    background-color: white;
+}
+.section__caja--8-2 {
+    background-color: green;
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+}
