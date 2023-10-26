@@ -12,27 +12,27 @@
 1. Haciendo uso de los atributos display y/o position, sitúa las cajas en las posiciones que se ven en la imagen.
 ![ejer1](images/image.png)
 
-    /\*Linea de Ejemplo\*/
-    .main__section--ejemplo {
-    background-color: yellowgreen;
-    }
+    /\*Linea de Ejemplo\*/  
+    .main__section--ejemplo {  
+    background-color: yellowgreen;  
+    }  
 
-    .section__caja--ejemplo-0 {
-     position: absolute;
-    bottom: 0;
-    background-color: red;
-    }
-    .section__caja--ejemplo-1 {
-    position: absolute;
-    top: 0;
-    background-color: lightcoral ;
-    }
-    .section__caja--ejemplo-2 {
-    position: absolute;
-    top: 0;
-    right: 50%;
-    background-color: lightseagreen;
-    }
+    .section__caja--ejemplo-0 {  
+     position: absolute;  
+    bottom: 0;  
+    background-color: red;  
+    }  
+    .section__caja--ejemplo-1 {  
+    position: absolute;  
+    top: 0;  
+    background-color: lightcoral ;  
+    }  
+    .section__caja--ejemplo-2 {  
+    position: absolute;  
+    top: 0;  
+    right: 50%;  
+    background-color: lightseagreen;  
+    }  
 
 **EJERCICIOS**
 ##### Haciendo uso de los atributos display y/o position, sitúa las cajas en las posiciones que se ven en la imagen.
