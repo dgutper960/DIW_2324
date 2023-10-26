@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.body__container {
+.body__main {
     width: 100%; /*Unidad de medida % -> Medida que toma de referencia el padre directo*/
     height: auto; /*Unidad de medida auto -> Medida que se adapta al contenido*/
 
@@ -11,7 +11,7 @@ body {
 
 
 /*EJERCICIO DE SITUAR caja EN MUCHAS POSICIONES DIFERENTES*/
-.container__section {
+.main__section {
     position: relative;
     height: 33vh; /*Unidad de medida vh -> Medida que toma de referencia el Viewport Height*/
 }
@@ -22,33 +22,49 @@ body {
 
     max-height: 100%;
     max-width: 50px;
-
-    background-color: rgb(49, 49, 49);
 }
 
+/*Linea de Ejemplo*/
+.main__section--ejemplo {
+    background-color: yellowgreen;
+}
+
+.section__caja--ejemplo-0 {
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+}
+.section__caja--ejemplo-1 {
+    position: absolute;
+    top: 0;
+    background-color: lightcoral ;
+}
+.section__caja--ejemplo-2 {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    background-color: lightseagreen;
+}
+
+
 /*Primera línea*/
-.container__section--aqua {
+.main__section--aqua {
     background-color: aqua;
 }
 
 .section__caja--1-0 {
+    background-color: rgb(49, 49, 49);
 }
 .section__caja--1-1 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     background-color: brown ;
 }
 .section__caja--1-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
     background-color: beige;
 }
 
 
 /*Segunda línea*/
-.container__section--brown {
+.main__section--brown {
     background-color: gainsboro;
 }
 
@@ -63,12 +79,8 @@ body {
 }
 
 /*Tercera línea*/
-.container__section--blueviolet {
+.main__section--blueviolet {
     background-color: blueviolet;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .section__caja--3-0 {
@@ -82,12 +94,8 @@ body {
 }
 
 /*Cuarta línea*/
-.container__section--green {
+.main__section--green {
     background-color: green;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .section__caja--4-0 {
@@ -102,7 +110,7 @@ body {
 
 
 /*Quinta línea*/
-.container__section--blue {
+.main__section--blue {
     background-color: blue;
 }
 
@@ -111,22 +119,14 @@ body {
 }
 .section__caja--5-1 {
     background-color: white ;
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-
 }
 .section__caja--5-2 {
     background-color: rgb(225, 255, 0);
 }
 
 /*Sexta línea*/
-.container__section--orange {
+.main__section--orange {
     background-color: orange;
-    display: flex;
 }
 
 .section__caja--6-0 {
@@ -140,11 +140,8 @@ body {
 }
 
 /*Séptima línea*/
-.container__section--red {
+.main__section--red {
     background-color: red;
-    display: flex;
-    align-items: end;
-    justify-content: center;
 }
 
 .section__caja--7-0 {
@@ -158,11 +155,8 @@ body {
 }
 
 /*Octava línea*/
-.container__section--black {
+.main__section--black {
     background-color: black;
-    display: flex;
-    align-items: end;
-    justify-content: center;
 }
 
 .section__caja--8-0 {
@@ -173,8 +167,4 @@ body {
 }
 .section__caja--8-2 {
     background-color: wheat;
-    position: absolute;
-
-    bottom: 0;
-    right: 0;
 }
