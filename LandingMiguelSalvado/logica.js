@@ -5,10 +5,10 @@ const cambiarCss = () => {
 };
 
 
-function onIniciar() {
+const onIniciar = () => {
     console.log("Uso esta funcion para inicializar elementos de la pagina");
     const divMenu = document.querySelector(".header__menu");
     divMenu.addEventListener("click", cambiarCss)
 }
 
-window.onload = onIniciar();
+window.onload = onIniciar;

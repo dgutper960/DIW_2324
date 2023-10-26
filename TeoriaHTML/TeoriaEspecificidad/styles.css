@@ -1,18 +1,38 @@
+/*Indico que a la etiqueta HTML body le voy a aplicar un estilo específico*/
+body {
+    margin: 0;
+    background-color: grey;
+    min-height: 100vh;
+}
+
+/*Indico que a los h1, p y h4 les voy a aplicar unos estilos específicos*/
 h1,p,h4 {
     font-family: 'Times New Roman', Times, serif;
     color: red;
 }
 
+/*Especifico clases CSS a los p que haya dentro de un div, sin importar el nivel en el que se encuentren*/
 div p {
     font-family: Arial, Helvetica, sans-serif;
     color: green;
 }
 
+/*Especifico clases a los p que sean hijos directos de un div*/
 div>p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: blue;
 }
 
+/*Selector de etiqueta: Aplicamos estilos a las etiquetas deseadas, en este caso, etiqueta main*/
+main {
+    position: relative;
+    margin-top: 20px;
+
+    background-color: bisque;
+
+}
+
+/*Selector de clase: Aplicamos estilos a las etiquetas identificadas con el nombre deseado.*/
 .cuerpo__divDePrueba {
     color: black;
     background-color: chocolate;
@@ -24,59 +44,81 @@ div>p {
     height: 50px;
     width: 100px;
 }
-
+/*Selector de clase*/
 .cuerpo__divDePrueba--red {
-    position: relative;
+    position: absolute;
     background-color: red;
 
     top: 50px;
     left: 40px;
 
 }
+/*Selector de clase*/
 .cuerpo__divDePrueba--blue {
     background-color: blue;
 }
 
-.cuerpo_spanPrueba {
-
-    color: black;
-    background-color: rgb(210, 30, 171);
-    margin-left: 10px;
-
-    border: 1px solid black;
-    padding: 10px;
-
-    height: 100px;
-    width: 100px;
-}
-
+/*Selector de etiqueta*/
 header {
+    position: relative;
     height: 200px;
     width: 100%;
 
-    background-color: whitesmoke;
+    background-color: black;
 }
-
+/*Selector de clase*/
 .header__caja1 {
     width: 100px;
-    height: 200px;
+    height: 100%;
 
     position: absolute;
-    left: 30%;
+    left: 40%;
 
     background-color: blue;
 }
-
+/*Selector de clase*/
 .header__caja2 {
 
     width: 50px;
-    height: 200px;
+    height: 100%;
 
     position: absolute;
     left: auto;
     right: 0;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     background-color: brown;
     
+}
+/*Selector de clase*/
+.caja2__div1 {
+    flex: 1;
+
+    background-color: red;
+}
+/*Selector de clase*/
+.caja2__div2 {
+    flex: 1;
+
+    background-color: green;    
+}
+/*Selector de clase*/
+.caja2__div3 {
+    flex: 1;
+
+    background-color: yellow;    
+}
+
+/*Selector de etiqueta*/
+footer {
+    position: absolute;
+
+    background-color: blue;
+    margin-top: 10px;
+
+    bottom: 0;
 }
 

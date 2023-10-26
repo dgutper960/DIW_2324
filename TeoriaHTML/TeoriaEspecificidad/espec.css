@@ -1,7 +1,0 @@
-h1 strong {
-    color: red;
-}
-
-h1>strong {
-    color: blue;
-}

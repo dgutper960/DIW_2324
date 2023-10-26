@@ -138,6 +138,7 @@ h4 {
 
 .navItems--abrir {
   transform: translateX(0);
+  position: fixed;
 
   transition: 0.1s ease-in;
 }
