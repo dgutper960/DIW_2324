@@ -75,8 +75,6 @@ a {
   text-align: center;
 
   border-bottom: 2px solid rgb(28, 28, 28);
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
 
   transition: border-bottom 0.2s ease-out;
 }
