@@ -43,9 +43,23 @@ p, span, div {
     font-family: 'ZombieHolocaust', sans-serif;
 }
 
+#nota__puntuacion {
+    font-family: 'ZombieHolocaust', serif;
+    font-size: 2.5rem;
+    color: #009900;
+}
+
+/**  ZONA HEADER + NAVEGACIÓN ***/
 .header {
 
     height: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff6e9;
 
     display: flex;
     justify-content: space-around;
@@ -53,8 +67,8 @@ p, span, div {
 
 .header__zonaTitulo {
     height: 100%;
-    width: 20%;
-    background-color: #FFFFFF;
+    width: 25%;
+    background-color: inherit;
 
     border-radius: 20px;
 
@@ -81,7 +95,7 @@ p, span, div {
 .header__zonaNavegacion {
     height: 100%;
     width: 40%;
-    background-color: #FFFFFF;
+    background-color: inherit;
 
     display: flex;
     justify-content: center;
@@ -118,7 +132,7 @@ p, span, div {
 */
 .zonaMain {
 
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 
     /*Establecemos el display: grid*/
     display: grid;
@@ -130,7 +144,7 @@ p, span, div {
     grid-auto-rows: minmax(200px, auto); /*minmax: una función css que establece el tamaño mínimo y máximo*/
 
     /*Aplicamos un poco de aire*/
-    row-gap: 10px; /*Aire entre rows*/
+    /*row-gap: 10px; /*Aire entre rows*/
     column-gap: 10px; /*Aire entre columnas*/
 }
 
@@ -146,7 +160,7 @@ p, span, div {
 
 .main__zonaImagen img {
 
-    width: 100%; /*100% del contenedor donde está contenida la imagen*/
+    max-width: 100%; /*100% del contenedor donde está contenida la imagen*/
     max-height: 300px;
 
     border: 6px solid #330033;
@@ -161,41 +175,50 @@ p, span, div {
     transform: scale(1.03);
 }
 
-
-
-.main__zonaDescripcion {
+.main__zonaInfo {
 
     grid-column: 6/12;
     border-left: 6px solid #330033;
     padding: 10px;
 }
 
-.zonaDescripcion__actores-nota {
+.zonaInfo__titulo-nota {
     display: grid;
     grid-template-columns: 60% 40%;
 }
 
-.actores-nota__actores {
+.titulo-nota__titulo {
 
     grid-column: 1;
 
 }
-.actores-nota__nota {
+.titulo-nota__nota {
 
     grid-column: 2;
     
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+}
+
+
+.zonaInfo__actores-premios {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.actores-premios__actores {
+
+    grid-column: 1;
+
+}
+.actores-premios__premios {
+
+    grid-column: 2;
 
 }
 
-#nota__puntuacion {
-    font-family: 'ZombieHolocaust';
-    font-size: 2.5em;
-    color: #009900;
-}
 
 
 
