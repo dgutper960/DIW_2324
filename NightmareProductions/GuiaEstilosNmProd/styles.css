@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto&display=swap');
+@font-face {
+	font-family: "ZombieHolocaust";
+	src: url("../fonts/zombie-holocaust/Fonts/Zombie_Holocaust.ttf") format("truetype");
+}
+
+
+* {
+  font-family: 'Noto Serif JP', serif;
+}
+
+h1,h2,h3,h4,h5,a {
+  font-family: 'Roboto', sans-serif;
+}
+
+#titulo {
+  font-family: 'ZombieHolocaust', 'Noto Serif JP', serif;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  height: 100vh; /* 100% del alto de la ventana */
+  margin: 10px;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.header img {
+  height: 80px;
+  padding-top: 3px;
+}
+
+.header a#logo {
+  border: 5px solid black;
+  border-radius: 50%;
+  background-color: rgb(234, 98, 13);
+  margin-left: 50px;
+  overflow: visible;
+
+  transition: all 0.5s linear;
+}
+
+.header a#logo:hover {
+  background-color: rgb(0, 125, 23);
+  transform: scale(0.95);
+}
+
+.zonaNavegacion {
+  height: 50px;
+  display: flex;
+  margin-left: auto;
+  margin-right: 10px;
+  gap: 10px;
+}
+
+.zonaNavegacion a {
+  width: 110px;
+  min-width: auto;
+  height: auto;
+  text-align: center;
+
+  border-bottom: 2px solid rgb(28, 28, 28);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+
+  transition: border-bottom 0.2s ease-out;
+}
+
+.zonaNavegacion a:hover {
+  border-bottom: 7px solid rgb(234, 98, 13);
+  border-radius: 3px;
+}
+
+.gridZonaCuerpo {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100%;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.zonaContenido {
+  grid-column: 4 / 10;
+  padding: 10px;
+
+  border-left: 2px solid rgb(214, 214, 214);
+  border-right: 2px solid rgb(214, 214, 214);
+
+  background-color: rgb(235, 235, 235);
+}
+
+@media all and (min-width: 360px) and (max-width: 774px) {
+  .header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header h1 {
+    display: none;
+  }
+
+  .zonaNavegacion {
+    /*display: none;*/
+    position: absolute;
+    top: 100px;
+  }
+
+  .gridZonaCuerpo {
+    margin-top: 50px;
+  }
+
+  .zonaContenido {
+    grid-column: 1 / 13;
+  }
+}
+
+kbd {
+  display:inline-block;
+  margin:0 .1em;
+  padding:.1em .6em;
+  font-family:Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-size:11px;
+  line-height:1.4;
+  color:#242729;
+  text-shadow:0 1px 0 #fff;
+  background-color:#e4e6e8;
+  border:1px solid #9fa6ad;
+  border-radius:3px;
+  box-shadow:0 1px 1px rgba(12,13,14,.14901960784313725),inset 0 1px 0 0 #fff;
+  white-space:nowrap;
+  vertical-align:bottom
+}
+
+@media all and (min-width: 774px) and (max-width: 968px) {
+  .header {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header h1 {
+    display: none;
+  }
+
+  .zonaContenido {
+    grid-column: 1 / 13;
+  }
+}
+
+@media all and (min-width: 968px) and (max-width: 1100px) {
+  .zonaContenido {
+    grid-column: 2 / 12;
+  }
+}
