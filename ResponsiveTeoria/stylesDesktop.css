@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   background-color: black;
 }
 
@@ -8,8 +8,26 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 
-  grid-auto-rows: minmax(15%, 20%);
+  grid-auto-rows: minmax(15%,20%);
 }
+
+.zonaArticulo1 {
+  grid-column: 2/3;
+  min-height: 20vh;
+  background-color: brown;
+}
+.zonaArticulo2 {
+  grid-column: 3/4;
+  min-height: 20vh;
+  background-color: rgb(232, 74, 74);
+}
+.zonaArticulo3 {
+  grid-column: 4/5;
+  min-height: 20vh;
+  background-color: rgb(42, 165, 58);
+}
+
+
 
 
 
