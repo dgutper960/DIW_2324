@@ -3,18 +3,9 @@
     background-color: pink;
   }
 
-  .container__grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-  }
-
   .grid__zonaArticulos {
-    grid-column: 1/13;
-    min-height: 20vh;
-    background-color: blue;
-
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
   }
 }
