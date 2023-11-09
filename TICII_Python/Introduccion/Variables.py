@@ -15,7 +15,13 @@ El valor de edad es 10 y el valor de nombre es "Pepe"
 
 """
 
-edad = 33
-nombre = "Diego"
+edad = 33 #Edad es numerico
+print("La edad de Diego es "+str(edad))
 
-print("Hola, mi nombre es "+nombre+" y tengo "+edad+" anios")
+edad = "treinta y tres" #Tipo de dato: caracter
+print("La edad de Diego es "+edad)
+
+
+
+
+
