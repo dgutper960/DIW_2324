@@ -7,30 +7,15 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
-
-    grid-auto-rows: minmax(15%, 20%);
   }
 
   .grid__zonaArticulos {
-    grid-column: 3/11;
+    grid-column: 1/13;
     min-height: 20vh;
     background-color: blue;
 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
-  }
-
-  .zonaArticulos__articulo {
-    min-height: 20vh;
-    background-color: brown;
-  }
-  .zonaArticulos__articulo--rojo {
-    min-height: 20vh;
-    background-color: red;
-  }
-  .zonaArticulos__articulo--verde {
-    min-height: 20vh;
-    background-color: green;
   }
 }

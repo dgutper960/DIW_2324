@@ -7,8 +7,6 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 10px;
-
-  grid-auto-rows: minmax(15%, 20%);
 }
 
 .grid__zonaArticulos {
@@ -21,15 +19,3 @@
   gap: 10px;
 }
 
-.zonaArticulos__articulo {
-  min-height: 20vh;
-  background-color: brown;
-}
-.zonaArticulos__articulo--rojo {
-  min-height: 20vh;
-  background-color: red;
-}
-.zonaArticulos__articulo--verde {
-  min-height: 20vh;
-  background-color: green;
-}
