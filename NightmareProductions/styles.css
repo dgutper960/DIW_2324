@@ -15,43 +15,203 @@ Tipografías
 2. Roboto               -> Títulos (h1... etc) 
 3. Noto Serif Japanese  -> Textos (p... etc)
 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto&display=swap");
 @font-face {
-	font-family: "ZombieHolocaust";
-	src: url("fonts/zombie-holocaust/Fonts/Zombie_Holocaust.ttf") format("truetype");
+  font-family: "ZombieHolocaust";
+  src: url("fonts/zombie-holocaust/Fonts/Zombie_Holocaust.ttf")
+    format("truetype");
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /*Ahora vamos a poner a cada elemento, una tipografía específica... sin tener en cuenta el font-weight*/
-h1, h2, h3, h4, h5, h6, a {
-    font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Roboto", sans-serif;
 }
 
-p, span, div {
-    font-family: 'Noto Serif JP', serif;
-
+p,
+span,
+div {
+  font-family: "Noto Serif JP", serif;
 }
 
 #tituloPagina {
-    font-family: 'ZombieHolocaust', sans-serif;
+  font-family: "ZombieHolocaust", sans-serif;
 }
 
 #nota__puntuacion {
-    font-family: 'ZombieHolocaust', serif;
-    font-size: 2.5rem;
-    color: #009900;
+  font-family: "ZombieHolocaust", serif;
+  font-size: 2.5rem;
+  color: #009900;
 }
 
 /**  ZONA HEADER + NAVEGACIÓN ***/
 .header {
+  height: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff6e9;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__zonaTitulo {
+  height: 100%;
+  width: 25%;
+  background-color: inherit;
+
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  transition: 0.2s linear;
+}
+.header__zonaTitulo:hover {
+  /*Hacemos uso de la pseudoclase hover*/
+  background-color: #ff6600;
+  transform: scale(1.05);
+
+  font-size: 1.2em; /*Em es una medida que toma como referencia el font-size del html*/
+}
+
+#zonaTitulo__logo img {
+  width: 60px;
+  height: auto;
+}
+
+.header__zonaNavegacion {
+  height: 100%;
+  width: 40%;
+  background-color: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /*Establecemos el "aire" entre los elementos*/
+}
+
+.header__zonaNavegacion a {
+  text-decoration: none; /*Para quitar el underlined*/
+  color: #330033;
+}
+
+.zonaNavegacion__div {
+  padding: 5px;
+  transition: 0.1s ease-out;
+}
+
+.zonaNavegacion__div:hover {
+  border-bottom: 4px solid #ff6600;
+  border-radius: 3px;
+}
+
+.zonaNavegacion__div h3 {
+  margin: 0;
+}
+
+/*
+******** ZONA MAIN ***********
+*/
+.zonaMain {
+  /*margin-top: 10px;*/
+
+  /*Establecemos el display: grid*/
+  display: grid;
+
+  /*Cuantas columnas queremos*/
+  grid-template-columns: repeat(12, 1fr); /*fr: unidad de medida*/
+
+  /*Establecemos un tamaño mínimo a la row*/
+  grid-auto-rows: minmax(
+    200px,
+    auto
+  ); /*minmax: una función css que establece el tamaño mínimo y máximo*/
+
+  /*Aplicamos un poco de aire*/
+  /*row-gap: 10px; /*Aire entre rows*/
+  column-gap: 10px; /*Aire entre columnas*/
+}
+
+.main__zonaImagen {
+  grid-column: 2/6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__zonaImagen img {
+  max-width: 100%; /*100% del contenedor donde está contenida la imagen*/
+  max-height: 300px;
+
+  border: 6px solid #330033;
+  border-radius: 10px;
+
+  transition: 0.1s ease-out;
+}
+
+.main__zonaImagen img:hover {
+  border: 0px solid #330033;
+  transform: scale(1.03);
+}
+
+.main__zonaInfo {
+  grid-column: 6/12;
+  border-left: 6px solid #330033;
+  padding: 10px;
+}
+
+.zonaInfo__titulo-nota {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.titulo-nota__titulo {
+  grid-column: 1;
+}
+.titulo-nota__nota {
+  grid-column: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.zonaInfo__actores-premios {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.actores-premios__actores {
+  grid-column: 1;
+}
+.actores-premios__premios {
+  grid-column: 2;
+}
+
+@media all and (max-width: 920px) {
+  .header {
     height: 90px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -63,9 +223,9 @@ p, span, div {
 
     display: flex;
     justify-content: space-around;
-}
+  }
 
-.header__zonaTitulo {
+  .header__zonaTitulo {
     height: 100%;
     width: 25%;
     background-color: inherit;
@@ -78,21 +238,9 @@ p, span, div {
     gap: 10px;
 
     transition: 0.2s linear;
-}
-.header__zonaTitulo:hover { /*Hacemos uso de la pseudoclase hover*/
-    background-color: #FF6600;
-    transform: scale(1.05);
+  }
 
-    font-size: 1.2em; /*Em es una medida que toma como referencia el font-size del html*/
-}
-
-#zonaTitulo__logo img {
-    width: 60px;
-    height: auto;
-}
-
-
-.header__zonaNavegacion {
+  .header__zonaNavegacion {
     height: 100%;
     width: 40%;
     background-color: inherit;
@@ -101,134 +249,19 @@ p, span, div {
     justify-content: center;
     align-items: center;
     gap: 10px; /*Establecemos el "aire" entre los elementos*/
-}
+  }
 
-.header__zonaNavegacion a {
-    text-decoration: none; /*Para quitar el underlined*/
-    color: #330033;
-}
-
-.zonaNavegacion__div {
-
-    padding: 5px;
-    transition: 0.1s ease-out;
-
-}
-
-.zonaNavegacion__div:hover {
-
-    border-bottom: 4px solid #FF6600;
-    border-radius: 3px;
-
-}
-
-.zonaNavegacion__div h3 {
-     margin: 0;
-}
-
-
-/*
-******** ZONA MAIN ***********
-*/
-.zonaMain {
-
-    /*margin-top: 10px;*/
-
-    /*Establecemos el display: grid*/
-    display: grid;
-
-    /*Cuantas columnas queremos*/
-    grid-template-columns: repeat(12, 1fr); /*fr: unidad de medida*/
-
-    /*Establecemos un tamaño mínimo a la row*/
-    grid-auto-rows: minmax(200px, auto); /*minmax: una función css que establece el tamaño mínimo y máximo*/
-
-    /*Aplicamos un poco de aire*/
-    /*row-gap: 10px; /*Aire entre rows*/
-    column-gap: 10px; /*Aire entre columnas*/
-}
-
-.main__zonaImagen {
-
-    grid-column: 2/6;
+  .main__zonaImagen {
+    grid-column: 2/12;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-
-.main__zonaImagen img {
-
-    max-width: 100%; /*100% del contenedor donde está contenida la imagen*/
-    max-height: 300px;
-
-    border: 6px solid #330033;
-    border-radius: 10px;
-
-    transition: 0.1s ease-out;
-}
-
-.main__zonaImagen img:hover {
-    
-    border: 0px solid #330033;
-    transform: scale(1.03);
-}
-
-.main__zonaInfo {
-
-    grid-column: 6/12;
-    border-left: 6px solid #330033;
+  }
+  .main__zonaInfo {
+    grid-column: 2/12;
+    border-left: 0;
+    border-bottom: 6px solid #330033;
     padding: 10px;
+  }
 }
-
-.zonaInfo__titulo-nota {
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
-
-.titulo-nota__titulo {
-
-    grid-column: 1;
-
-}
-.titulo-nota__nota {
-
-    grid-column: 2;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.zonaInfo__actores-premios {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.actores-premios__actores {
-
-    grid-column: 1;
-
-}
-.actores-premios__premios {
-
-    grid-column: 2;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-

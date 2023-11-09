@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+.body__header {
+  min-height: 20vh;
+  background-color: black;
+
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.header__zonaTitulo {
+  width: 200px;
+  min-height: 100%;
+  background-color: antiquewhite;
+}
+
+.header__zonaNavegacion {
+  width: 200px;
+  min-height: 100%;
+  background-color: aqua;
+}
+
+@media all and (min-width: 360px) and (max-width: 920px) {
+  .body__header {
+
+    flex-wrap: wrap;
+    
+  }
+
+  .header__zonaTitulo {
+    width: 100%;
+    min-height: 20vh;
+    background-color: antiquewhite;
+  }
+
+  .header__zonaNavegacion {
+    width: 100%;
+    min-height: 20vh;
+    background-color: aqua;
+  }
+}
