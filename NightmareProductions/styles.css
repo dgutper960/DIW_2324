@@ -222,12 +222,12 @@ div {
     background-color: #fff6e9;
 
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
   }
 
   .header__zonaTitulo {
     height: 100%;
-    width: 25%;
+    width: 100%;
     background-color: inherit;
 
     border-radius: 20px;
@@ -242,7 +242,7 @@ div {
 
   .header__zonaNavegacion {
     height: 100%;
-    width: 40%;
+    width: 100%;
     background-color: inherit;
 
     display: flex;
