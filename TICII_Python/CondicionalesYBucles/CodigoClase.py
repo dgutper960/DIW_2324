@@ -39,9 +39,13 @@ if vaEnChandal == False and estaEbrio == False:
 else:
     print("No Pasas")
 
-# if elif else
+# Ejercicio 1
+contrasenia = "1234567890"
 
-# Teoria Bucles
-# Bucle while
+print("Dime la contrasenia: ")
+contraseniaUsuario = input()
 
-# Bucle for
+if contraseniaUsuario == contrasenia:
+    print("Contrasenia correcta")
+else:
+    print("Contrasenia incorrecta")
