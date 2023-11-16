@@ -18,14 +18,14 @@ tieneDinero = False
 tieneBach = True
 tieneGS = False
 
-if tieneDinero == True or tieneBach == True or tieneGS == True :
+if tieneDinero == True or tieneBach == True or tieneGS == True:
     print("A la universidad niñic@")
-    
+
 
 vaEnChandal = False
 estaEbrio = True
 
-if vaEnChandal == False and estaEbrio == False :
+if vaEnChandal == False and estaEbrio == False:
     print("Pasa niñic@")
 
 
