@@ -7,6 +7,7 @@ $color-letra-header: #ffffff;
 $color-letra-nav: #222222;
 
 $color-borde-elemento-nav: #b31312;
+$color-borde-caja-articulo: #6e6e6e;
 
 // FUNCION PARA CAMBIAR EL FONDO Y LA LETRA DE UN ELEMENTO
 @mixin cambiar-fondo-y-letra(
@@ -23,8 +24,15 @@ $color-borde-elemento-nav: #b31312;
   grid-template-columns: repeat($n-columnas, 1fr);
 }
 
+@mixin caja-con-padding() {
+  border: 1px solid $color-borde-caja-articulo;
+  border-radius: 10%;
+  padding: 0.5em;
+}
+
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -69,8 +77,26 @@ body {
 .main-content {
   @include cambiar-fondo-y-letra($color-fondo, $color-letra);
   @include establecer-grid();
+  column-gap: 0.5em;
+  padding-top: 1em;
 
   .main__publicacion {
-    grid-column: 3/11;
+    grid-column: 3/8;
+    @include caja-con-padding();
+  }
+
+  .main__imagen {
+    grid-column: 8/11;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1em;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
   }
 }
