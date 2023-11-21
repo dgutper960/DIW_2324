@@ -1,0 +1,91 @@
+// TEXTO
+$color-texto: #222222;
+$color-texto-secundario: #ffffff;
+$color-fondo-cabecera: #000000;
+$color-fondo-footer: #3b3b3b;
+
+// ENLACES
+$color-enlace: #cc0000;
+$color-enlace-hover: #222222;
+
+// MENU NAVEGACION
+$color-texto-nav: #222222;
+$color-texto-nav-hover: #cc0000;
+$color-borde-inferior-elemento-nav: #cc0000;
+
+// BORDES Y FONDO
+$color-borde: #dddddd;
+$color-fondo: #eeeeee;
+
+// Fuentes
+$fuentes-serif: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+$fuentes-sans-serif: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+@mixin cambiar_color_y_background($fondo: #eeeeee, $color: #222222) {
+  color: $color;
+  background-color: $fondo;
+}
+
+body {
+  @include cambiar_color_y_background();
+  box-sizing: border-box;
+  font-family: $fuentes-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: $fuentes-sans-serif;
+}
+
+// ESTILOS ARTICULO
+.header {
+  @include cambiar_color_y_background($color-fondo-cabecera, $color-fondo);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  div {
+    grid-column: 3/11;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid $color-borde;
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  div {
+    padding-left: 1em;
+    padding-right: 1em;
+
+    a {
+      text-decoration: none;
+      padding: 1em;
+    }
+
+    a:visited,
+    a:link,
+    a:active {
+      color: inherit;
+    }
+
+    .a__active {
+      border-bottom: 2px solid $color-borde-inferior-elemento-nav;
+    }
+  }
+}
+
+.main {
+  @include cambiar_color_y_background($color-fondo-cabecera, $color-fondo);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  
+}
