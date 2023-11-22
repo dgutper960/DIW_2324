@@ -13,17 +13,40 @@ while condicion:
     cuerpo del bucle
  
 """
+# Ejemplo 1. Contar hasta 10
 numero = 0
 while numero<5:
     print(f"{numero}")
     numero = numero + 1
 
+
+# Ejemplo 2. Numero 0 para salir
 numeroParaSalir = 0
 numeroIntroducido = None
 while numeroIntroducido != numeroParaSalir:
     numeroIntroducido = int(input("Introduzca un numero: "))
 
 print("Saliendo...")
+
+# Ejemplo 3. Bar bonillo
+opcion = 1
+while opcion != 0:
+    print("Bienvenid@ al bar Bonillo. ¿Qué desea?")
+    print("1. Bravas muy bravas")
+    print("2. Bravas moderadas")
+    print("0. Salir")
+    opcion = int(input())
+    if opcion == 1:
+        print("Ha elegido usted unas bravas muy bravas")
+    elif opcion == 2:
+        print("Ha elegido usted unas bravas moderadas")
+    elif opcion == 0:
+        print("Ha elegido salir")
+    else:
+        print("Opcion incorrecta")
+
+print("Hasta la proxima")
+    
 
 # Bucles for
 """
@@ -39,6 +62,23 @@ for variable in elemento iterable (lista, cadena, range, etc.):
     cuerpo del bucle
  
 """
+# Ejemplo 1. Rango hasta 10
+for i in range(10):
+    print(i)
+    
+# Ejemplo 2. Rango de 3 a 10
+for i in range(3, 10):
+    print(i)
 
-for i in range(5,10):
+# Ejemplo 3. Recorrer una cadena (la i se convierte a char)
+cadena = "esternocleidomastoideo"
+for i in cadena:
+    print(i)
+
+# Ejemplo 4. Imprimir numeros pares del 1 al 200
+for i in range(0,200):
+    if i%2 == 0:
+        print(i)
+        
+for i in range(0, 200, 2):
     print(i)

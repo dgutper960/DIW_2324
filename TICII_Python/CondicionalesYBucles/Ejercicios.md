@@ -42,7 +42,7 @@ Haz el ejercicio 5 de los condicionales pero mostrando el siguiente menú inicia
 2. Menú no vegetariano
 0. Salir
 
-El programa debe mostrar dicho menú mientras el usuario no introduzca una opción correcta, es decir, mientras el usuario no introduzca 1 o 2. 
+El programa debe mostrar dicho menú mientras el usuario no introduzca la opción de salir (opción 0)
 - Si el usuario pulsa 0, el programa terminará.
 - Si el usuario introduce una opción incorrecta, el programa mostrará un mensaje informativo sobre ello.
 - Si el usuario introduce 1 -> El programa mostrará los ingredientes vegetarianos.
