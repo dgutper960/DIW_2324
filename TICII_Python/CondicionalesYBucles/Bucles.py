@@ -13,6 +13,17 @@ while condicion:
     cuerpo del bucle
  
 """
+numero = 0
+while numero<5:
+    print(f"{numero}")
+    numero = numero + 1
+
+numeroParaSalir = 0
+numeroIntroducido = None
+while numeroIntroducido != numeroParaSalir:
+    numeroIntroducido = int(input("Introduzca un numero: "))
+
+print("Saliendo...")
 
 # Bucles for
 """
@@ -28,3 +39,6 @@ for variable in elemento iterable (lista, cadena, range, etc.):
     cuerpo del bucle
  
 """
+
+for i in range(5,10):
+    print(i)
