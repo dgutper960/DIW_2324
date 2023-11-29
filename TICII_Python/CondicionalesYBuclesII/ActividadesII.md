@@ -19,11 +19,11 @@ Por ejemplo:
 usuario introduce: "esternocleidomastoideo"
 programa muestra: "esternocleidomastoideo contiene 1 a"
 
-### Actividad 3
+### Actividad 4
 
 Realiza un programa que pida números por teclado al usuario de forma indefinida y que realice la suma de los números pares introducidos y de los números impares introducidos. Cuando se introduce un número negativo el programa debe mostrar la suma de los pares y la suma de los impares.
 
-### Actividad 4
+### Actividad 5
 
 Vamos a simular el login de un usuario dentro de una aplicación para una cafetería. **CoffeeShop Ubrique**
 Declara 2 variables llamadas usuarioRegistrado y contraseniaRegistrada que tengan como objetivo almacenar los datos del único usuario registrado dentro de tu aplicación.
