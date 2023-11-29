@@ -5,7 +5,7 @@
 Implementa un algoritmo en el que dado un entero n > 1 leído por teclado, calcule e imprima los elementos correspondientes a la Conjetura de Ullman (en honor al matemático S. Ullman). La conjetura consiste en lo siguiente:
 • Empieza con cualquier entero positivo.
 • Si es par, se divide entre 2; si es impar se multiplica por 3 se agrega 1.
-• Se itera hasta obtener el número 1.
+• Se itera hasta obtener el número 1. while num > 1
 
 ## Actividad 2
 
