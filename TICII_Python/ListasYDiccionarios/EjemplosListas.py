@@ -28,3 +28,4 @@ if passwordsRegistered[i] == passwordPorTeclado:
     
 
 # Wrapped Diego
+gruposDiego = ["Mujeres", "Los Planetas", "Carolina Durante", "Arde Bogotá", "Bob Marley & The Wailers"]
