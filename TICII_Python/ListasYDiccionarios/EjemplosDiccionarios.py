@@ -24,6 +24,11 @@ print(divisas["Bitcoin"])
 print(divisas["Dogecoin"])
 print(divisas["Dogecoinn"])
 
+if divisas.get("Dogecoinnn") == None:
+    print("DogeCoinnn no existe")
+else:
+    print(f'La divisa es: {divisas.get("Dogecoinn")}')
+
 
 
 """

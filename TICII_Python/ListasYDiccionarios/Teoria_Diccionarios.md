@@ -28,9 +28,25 @@ Algunas propiedades de los diccionario en Python son las siguientes:
 
 Se puede acceder a sus elementos con ```[]``` o también con la función ```get()```. Lo que se indica dentro de los corchetes es la ```key``` del ```value``` al que queremos acceder.
 
+- Si se intenta acceder a una ```key``` haciendo uso de ```[]``` y dicha clave no existe, se lanzará un ERROR.
+- Si se intenta acceder a una ```key``` haciendo uso de ```get()``` y dicha clave no existe, el método devolverá *None*.
+
 ```Python:
-print(d1['Nombre'])     #Sara
-print(d1.get('Nombre')) #Sara
+print(d1['Nombre'])         #Sara
+print(d1.get('Nombre'))     #Sara
+
+print(d1['Apellidos'])      #!Error
+print(d1.get('Apellidos'))  #None
+```
+
+***Ayuda***
+Haciendo uso del método *.get()* de los diccionarios podemos saber si dicha clave existe dentro del diccionario o no. Para ello, simplemente hacemos una comprobación con una estructura if, donde comparamos el resultado de acceder a una ```key``` con None. Si el resultado es True, significa que dicha clave no existe en el diccionario.
+
+```Python:
+if d1.get('Apellidos') == None:
+    print('El elemento no existe')
+else:
+    print(d1.get('Apellidos'))
 ```
 
 Como podemos ver en el ejemplo anterior, indicamos la ```key``` *Nombre* para poder acceder a su ```value``` *Sara*
