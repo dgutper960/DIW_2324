@@ -1,36 +1,33 @@
-"""
-Escribir un programa que gestione las facturas pendientes de 
-cobro de una empresa. Las facturas se almacenarán en un diccionario 
-donde la clave de cada factura será el número de factura y el 
-valor el coste de la factura. El programa debe preguntar al 
-usuario si quiere añadir una nueva factura, pagar una existente 
-o terminar. Si desea añadir una nueva factura se preguntará por 
-el número de factura y su coste y se añadirá al diccionario. 
-Si se desea pagar una factura se preguntará por el número de 
-factura y se eliminará del diccionario. Después de cada operación 
-el programa debe mostrar por pantalla la cantidad cobrada hasta 
-el momento y la cantidad pendiente de cobro.
-"""
 # key: value
-print("Bienvenid@ a la gestion de users")
+print("Bienvenid@ a la gestion de facturas")
 
 opc = 1
-diccionarioUsers = {}
+diccionarioFacturas = {}
+"""
+Las facturas se almacenarán de la siguiente manera:
+key: value
+La key será el nº de la factura, y el value será la cuantía de la factura
+Ejemplo:
+{
+"fact1": 1000,
+"fact2": 500,
+"fact3": 1500
+}
+"""
 while opc != 0:
-    print("1. Anadir user")
-    print("0. Salir")
+    print("1. Pagar factura")
+    print("2. Anadir factura")
+    
+    print("0. Terminar")
     opc = int(input("Qué desea hacer?"))
     
+    # Lo ideal es iterar sobre las facturas para poder visualizarlas
+    # nFactura es la key del diccionario
+    for nFactura in diccionarioFacturas:
+        print(nFactura+": "+str(diccionarioFacturas[nFactura]))
     
     if opc == 1:
-        nombre = input("Introduzca su nombre")
-        dni = input("Introduzca su dni")
-        edad = int(input("Introduzca su edad"))
-        
-        diccionarioUsers[dni] = {"nombre": nombre, "edad": edad}
-        
-        for dni in diccionarioUsers:
-            print("Info de: "+dni)
-            print(diccionarioUsers[dni])
-    elif opc == 0:
-        print("Opción incorrecta...")
+        print("Pagar factura")
+    
+
+    
