@@ -1,0 +1,3 @@
+diego:123456790
+user2:password
+hack3r:averystrongpassword
