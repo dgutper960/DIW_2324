@@ -4,7 +4,7 @@ Teoria de lectura de archivos
 Para abrir un archivo se usa el método open("ruta del archivo", "r -> read")
 """
 # Para abrir un archivo se usa el método open("ruta del archivo", "r -> read")
-archivo_marcas = open('TICII_Python\EjerFicheros\MarcasCoches.txt', 'r')
+archivo_marcas = open('TICII_Python/EjerFicheros/MarcasCoches.txt', 'r')
 
 print(archivo_marcas)
 
