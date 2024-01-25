@@ -1,32 +1,41 @@
 .contacto__main {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 25% 75%;
 
+    label {
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
+
+    .input__text {
+        width: 50%;
+        height: 2em;
+
+        &:hover {
+           border: 3px solid $ubriWeb-corporate-3-scaled;  
+        }
+
+        &:focus {
+            border: 3px solid $ubriWeb-corporate-3;
+            outline: none;
+        }
+    }
+
+    
     .main__formularioContacto {
 
-        display: flex;
-        flex-direction: column;
-
-        row-gap: 1em;
-
-        border: 2px solid $ubriWeb-corporate;
-        border-radius: 1em;
-
-        padding: 2em;
-        padding-top: 3em;
-        padding-bottom: 3em;
+        grid-column: 2/3;
         background-color: $ubriWeb-bg;
+        padding: 2em;
+        border-left: 1px solid $color-black;
 
-        .formularioContacto__groupPassword {
+        .formularioContacto__group {
             display: flex;
             flex-direction: column;
+            padding-bottom: 1em;
         }
-        .formularioContacto__groupNombre {
-            display: flex;
-            flex-direction: column;
-        }
+
         .formularioContacto__groupBotonera {
             display: flex;
             align-items: center;
