@@ -12,6 +12,8 @@
         width: 50%;
         height: 2em;
 
+        padding: 1em;
+
         &:hover {
            border: 3px solid $ubriWeb-corporate-3-scaled;  
         }
@@ -19,6 +21,30 @@
         &:focus {
             border: 3px solid $ubriWeb-corporate-3;
             outline: none;
+        }
+    }
+
+    .button__normal {
+
+        width: 10em;
+        height: 3em;
+        outline: none;
+        border: none;
+
+        font-weight: bold;
+    }
+
+    .button__normal--send {
+        background-color: $ubriWeb-corporate-4;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $ubriWeb-corporate-4-scaled;
+        }
+
+        &:active {
+            background-color: $ubriWeb-corporate-4-scaled;
+            border: 2px solid $ubriWeb-corporate-4;
         }
     }
 
@@ -35,11 +61,18 @@
             flex-direction: column;
             padding-bottom: 1em;
         }
+        .formularioContacto__group--checkbox {
+            flex-direction: row;
 
-        .formularioContacto__groupBotonera {
-            display: flex;
+            label {
+                font-weight: normal;
+                padding-bottom: 0%;
+            }
+        }
+
+        .formularioContacto__group--botonera {
+            flex-direction: row;
             align-items: center;
-            justify-content: center;
         }
 
     }

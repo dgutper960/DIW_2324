@@ -16,8 +16,17 @@
         <input class="input__text" type="text" name="input__apellidos" id="input__apellidos" aria-labelledby="label__apellidos" placeholder="Escriba aquí sus apellidos">
     </div>
 
-    <div class="formularioContacto__groupBotonera" role="region">
-        <button type="submit">Enviar</button>
+    <div class="formularioContacto__group formularioContacto__group--checkbox" role="region">
+        <input type="checkbox" name="input__condiciones" id="input__condiciones">
+        <label for="input__condiciones">Acepto los términos y condiciones</label>
+    </div>
+
+    <div class="formularioContacto__group" role="region">
+        <p>Campos obligatorios <span class="color__red">*</span></p>
+    </div>
+
+    <div class="formularioContacto__group formularioContacto__group--botonera" role="region">
+        <button class="button__normal button__normal--send" role="button" type="submit">Enviar</button>
     </div>
 
 </form>
