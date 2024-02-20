@@ -1,12 +1,15 @@
 .index__main {
-
     
+
     .main__picture {
 
+        overflow: hidden;
+        max-height: 80vh;
 
         img {
-            height: auto;
             width: 100%;
+            height: auto;
+                    
         }
 
     }
