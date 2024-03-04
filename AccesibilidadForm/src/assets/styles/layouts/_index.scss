@@ -6,15 +6,68 @@
         overflow: hidden;
         max-height: 90vh;
 
-        img {
+        .img {
             width: 100%;
             height: auto;   
         }
 
-        video {
+        .video {
             width: minmax(60%, 100%);
         }
     }
+}
 
+.main__tabs {
+
+    padding: 1em;
+    background-color: burlywood;
+
+    .tabs__listaBotones {
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+
+        .listaBotones__botonTab {
+            padding: 1em;
+            margin: 0 1em 0 0;
+            transition: all 0.2s ease;
+            cursor: pointer;
+
+            @include neo(1, 1em, 1em)
+        }
+
+        .listaBotones__botonTab:hover {
+            background-color: $ubriWeb-corporate-hover;
+        }
+
+        .activo {
+            background-color: $ubriWeb-corporate;
+        }
+    }
+
+    .tabs__contenedorTexto {
+
+        position: relative;
+        overflow: hidden;
+        min-height: 10vh;
+
+        .contenedorTexto__bloque {
+            background-color: aquamarine;
+
+            padding: 1em;
+            position: absolute;
+            top: 0;
+            opacity: 0;
+
+            @include neo(1, 1em, 1em)
+        }
+
+        .activo {
+            opacity: 1;
+        }
+    }
 
 }
