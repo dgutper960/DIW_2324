@@ -22,7 +22,7 @@ function onIniciar() {
         });
         // añadimos activo al boton pulsado y al texto correspondiente
         boton.classList.add("activo");
-        bloquesTexto[i].add("activo");
+        bloquesTexto[i].classList.add("activo");
       });
   })
 
