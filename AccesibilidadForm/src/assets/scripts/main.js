@@ -12,12 +12,18 @@ function onIniciar() {
   const bloquesTexto = document.querySelectorAll(".contenedorTexto__bloque");
   // 3. añadir Evenlistener a todos los botones
   botonesTab.forEach( (boton, i)=>{
-      console.log(boton); // Cada boton
 
       boton.addEventListener("click", ()=>{
-        console.log("Click en boton"+(i+1))
+        console.log("Click en boton"+i);
+        // quitamos activo a todos los botones y al texto
+        botonesTab.forEach( (botonFE, j)=>{
+          botonFE.classList.remove("activo")
+          bloquesTexto[j].classList.remove("activo");
+        });
+        // añadimos activo al boton pulsado y al texto correspondiente
         boton.classList.add("activo");
-      })
+        bloquesTexto[i].add("activo");
+      });
   })
 
 }
