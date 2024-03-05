@@ -1,6 +1,8 @@
 
 
-
+/**
+ * CODIGO DE PESTAÑAS
+ */
 
 
 function onIniciar() {
@@ -27,6 +29,33 @@ function onIniciar() {
   })
 
 }
+
+
+/**
+ * CODIGO ACORDEÓN
+ */
+// 1. Seleccionamos los nodos
+const h2Titulo = document.querySelectorAll('.divContenedor__titulo');
+const pContenido = document.querySelectorAll('.divContenedor__contenido');
+
+console.log(h2Titulo);
+console.log(pContenido);
+
+h2Titulo.forEach((nodo, i)=>{
+  console.log(nodo);
+
+  nodo.addEventListener("click", ()=>{
+
+    if(pContenido[i].classList.contains("activo2")){
+      pContenido[i].classList.remove("activo2");
+    }else{
+      pContenido[i].classList.add('activo2');
+    }
+  });
+
+
+})
+
 
 
 window.onload = onIniciar();

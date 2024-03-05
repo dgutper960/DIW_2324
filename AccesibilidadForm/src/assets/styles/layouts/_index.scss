@@ -76,3 +76,47 @@
     }
 
 }
+
+.main_acordeon{
+
+    background-color: rgb(89, 146, 127);
+    padding: 1em;
+
+    h2, p{
+        margin: 0;
+    }
+
+
+    .acordeon__divContenedor{
+        background-color: chocolate;
+        margin-bottom: 1em;
+    }
+
+    .divContenedor__titulo{
+        background-color: antiquewhite;
+        padding: 1rem; //respecto al html
+
+        @include neo(1, 1em, 1em);
+    }
+
+    .divContenedor__contenido{
+        background-color: blueviolet;
+        padding: 0; //respecto al html
+        height: 0;
+        overflow: hidden;
+
+        cursor: pointer;
+
+        transition: all 0.5s ease;
+    }
+
+    .activo2{
+
+        padding: 1rem; //respecto al html
+        min-height: 4rem;
+        overflow: hidden;
+
+
+        cursor: pointer;
+    }
+}
